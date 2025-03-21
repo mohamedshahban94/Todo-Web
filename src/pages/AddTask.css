@@ -1,0 +1,41 @@
+.add-task-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1d7874; /* Teal */
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-task-container h2 {
+    text-align: center;
+    color: #f4c095; /* Soft Beige */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #679289; /* Muted Green */
+    color: white;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #ddd;
+}
+
+button {
+    width: 100%;
+    background-color: #f4c095; /* Soft Beige */
+    color: black;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ee2e31; /* Bold Red */
+    color: white;
+}

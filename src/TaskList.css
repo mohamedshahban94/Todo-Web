@@ -1,0 +1,134 @@
+.task-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  background-color: #071e22;
+  /* Dark Teal */
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.task-card {
+  background-color: #679289;
+  /* Muted Green */
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-card:hover {
+  transform: scale(1.05);
+}
+
+.task-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.task-description {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+.task-status {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.task-status-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.completed {
+  background-color: #1d7874;
+  /* Teal */
+  color: white;
+}
+
+.pending {
+  background-color: #f4c095;
+  /* Soft Beige */
+  color: black;
+}
+
+.task-status-btn:hover {
+  opacity: 0.8;
+}
+
+.delete-btn {
+  background-color: #ee2e31;
+  /* Bold Red */
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  /* Reduced padding */
+  font-size: 14px;
+  /* Smaller font */
+  cursor: pointer;
+  border-radius: 5px;
+  float: right;
+}
+
+.delete-btn:hover {
+  background-color: #c92828;
+}
+
+.add-task-card {
+  background-color: #1d7874;
+  /* Teal */
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 120px;
+  /* Same height as task cards */
+  width: 250px;
+  /* Same width as task cards */
+  border-radius: 10px;
+  /* Match task card's border-radius */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plus-icon {
+  font-size: 36px;
+}
+
+/* Styling for edit mode input fields */
+.edit-input {
+  width: 90%;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #f4c095;
+  /* Soft Peach border */
+  background-color: #679289;
+  /* Muted Teal */
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+
+.edit-input:focus {
+  border-color: #ee2e31;
+  /* Highlight Red on focus */
+  background-color: #1d7874;
+  /* Darker Teal */
+}
